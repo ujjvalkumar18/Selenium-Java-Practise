@@ -1,0 +1,22 @@
+
+public class Ujjwal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i=0;
+		try{
+		int j=10/0;
+		//System.out.println(i);
+		System.out.println(j);
+		}
+		catch (ArithmeticException e){
+			System.out.println(e.getMessage());
+		}
+		finally{
+			System.out.println(); 
+			
+			
+	}
+
+}
+}

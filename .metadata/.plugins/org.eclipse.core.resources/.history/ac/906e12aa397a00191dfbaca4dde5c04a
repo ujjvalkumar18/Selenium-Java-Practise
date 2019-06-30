@@ -1,0 +1,25 @@
+package MYSQLConnect;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import org.testng.annotations.Test;
+
+public class Sqlconnect {
+
+	@Test
+	public void testdb() throws ClassNotFoundException, SQLException{
+		//It will load the driver.
+		Class.forName("com.mysql.jdbc.Driver");
+		System.out.println("Driver Loaded");
+		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/selenium","root", "selenium");
+		System.out.println("Connection to MySql DB");
+		Statement stmt= con.createStatement();
+		System.out.println("Statement Created");
+		stmt.executeQuery("select * from seleniumuser");
+		con.close();
+		
+	}
+}

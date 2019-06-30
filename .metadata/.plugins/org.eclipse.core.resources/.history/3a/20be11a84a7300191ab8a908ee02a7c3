@@ -1,0 +1,16 @@
+package Array;
+
+public class SecondLargest {
+
+	public static void main(String[] args) {
+		
+		int arr[]={10,12,18,20,22};
+		int larget=arr[0];
+		int secondlarget=arr[0];
+		for(int i=0;i<arr.length;i++){
+			System.out.println(arr[i] +"/t");
+		}
+		
+	}
+
+}
